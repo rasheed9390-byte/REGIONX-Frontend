@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+**/dist/
+
+# Environment files and secrets
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Local logs
+*.log
+npm-debug.log*
+
+# Editor and operating system files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Backend source — deploy separately to EC2
+src/server/
