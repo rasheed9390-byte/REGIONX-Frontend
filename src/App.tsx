@@ -66,6 +66,8 @@ const GEO_URL =
 
   "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 
+const API_BASE = "https://3.211.69.195";
+
 type Status = "EXCELLENT" | "GOOD" | "AVERAGE" | "HIGH";
 
 type Region = {
@@ -1460,7 +1462,9 @@ function App() {
 
     try {
 
-      const response = await fetch("http://- 3.211.69.195:10000/api/history?limit=20");
+      const response = await fetch(
+        "https://3.211.69.195/api/history?limit=20"
+      );
 
       if (!response.ok) return;
 
@@ -1506,7 +1510,7 @@ function App() {
 
       const response = await fetch(
 
-        `http://http://- 3.211.69.195:10000/api/latency?regions=${encodeURIComponent(
+        `${API_BASE}/api/latency?regions=${encodeURIComponent(
 
           selected.join(",")
 
