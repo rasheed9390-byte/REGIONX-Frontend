@@ -1460,9 +1460,7 @@ function App() {
 
     try {
 
-      const response = await fetch("http://localhost:10000/api/history?limit=20"
-
-);
+      const response = await fetch("http://34.229.224.7:10000/api/history?limit=20");
 
       if (!response.ok) return;
 
@@ -1508,7 +1506,7 @@ function App() {
 
       const response = await fetch(
 
-        `http://localhost:10000/api/latency?regions=${encodeURIComponent(
+        `http://http://34.229.224.7:10000/api/latency?regions=${encodeURIComponent(
 
           selected.join(",")
 
