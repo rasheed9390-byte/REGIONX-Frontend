@@ -66,7 +66,7 @@ const GEO_URL =
 
   "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 
-const API_BASE = "https://3.211.69.195";
+const API_BASE = "https://regionx-backend-0zpt.onrender.com";
 
 type Status = "EXCELLENT" | "GOOD" | "AVERAGE" | "HIGH";
 
@@ -1463,7 +1463,7 @@ function App() {
     try {
 
       const response = await fetch(
-        "https://3.211.69.195/api/history?limit=20"
+        `${API_BASE}/api/history?limit=20`
       );
 
       if (!response.ok) return;
